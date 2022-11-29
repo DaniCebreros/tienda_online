@@ -1,0 +1,52 @@
+GET http://localhost:3000/api/products
+
+###
+
+GET http://localhost:3000/api/products/available
+
+###
+GET http://localhost:3000/api/products/oficina
+
+###
+GET http://localhost:3000/api/products/min/5
+
+###
+GET http://localhost:3000/api/products/min/4/max/20
+
+###
+GET http://localhost:3000/api/products/stock/5
+
+###
+GET http://localhost:3000/api/products/6384c12e08a7a56e170cf72e
+
+###
+POST http://localhost:3000/api/products
+
+
+###
+GET http://localhost:3000/api/clients
+
+###
+POST http://localhost:3000/api/clients
+Content-Type: application/json
+
+{
+    "name": "Daniel",
+    "email": "dani@gmail.com",
+    "adress": "Calle Málaga",
+    "age": 40,
+    "active": true
+}
+
+###
+PUT http://localhost:3000/api/clients/
+Content-Type: application/json
+
+{
+    "age": 35,
+    "active": false
+}
+
+###
+DELETE http://localhost:3000/api/clients/6385ee255ee03de7d3badad4
+
